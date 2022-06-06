@@ -49,45 +49,20 @@ for (let i = hacker1.length - 1; i >= 0; i--) {
 }
 
 console.log("reversedName", reversedName)
-  // Iteration 1: Names and Input
 
-  // ### Iteration 3: Loops
-  //   3.1 Print all the characters of the driver's name, separated by a space and [in capitals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase)
-  //   i.e. `"J O H N"`
 
-  //   3.2 Print all the characters of the navigator's name, in reverse order.
-  //   i.e. `"nhoJ"`
 
-  //   3.3 Depending on the [lexicographic order](https://en.wikipedia.org/wiki/Lexicographical_order) of the strings, print: <br>
+ //   3.3 Depending on the [lexicographic order](https://en.wikipedia.org/wiki/Lexicographical_order) of the strings, print: <br>
   //     - `The driver's name goes first.` <br>
   //     - `Yo, the navigator goes first definitely.` <br>
   //     - `What?! You both have the same name?`
-
-  // Iteration 2: Conditionals
-}
-
-
-
-
-// a reverse loop:
-// starts at the variable length - 1 (the last index),
-// goes while i is higher or equal to 0 
-// and decreases the variable i
-for (let i = hacker1.length - 1; i >= 0; i--) {
-  reversedName = reversedName + hacker1[i]
-}
-
-console.log("reversedName", reversedName)
-
-// Iteration 3.3 lexicographic
-
-// first we identify the longest word for the loop
 let longestWord = ""
 if (hacker1.length >= hacker2.length) {
   longestWord = hacker1
 } else {
   longestWord = hacker2
 }
+
 
 // the loop runs for every character and compares them.
 for (let i = 0; i < longestWord.length; i++) {
@@ -106,6 +81,32 @@ for (let i = 0; i < longestWord.length; i++) {
   }
   // loop will continue running for each character until it found one match, then it breaks the loop.
 }
+  // Iteration 1: Names and Input
+
+  // ### Iteration 3: Loops
+  //   3.1 Print all the characters of the driver's name, separated by a space and [in capitals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase)
+  //   i.e. `"J O H N"`
+
+  //   3.2 Print all the characters of the navigator's name, in reverse order.
+  //   i.e. `"nhoJ"`
+
+ 
+
+  // Iteration 2: Conditionals
+}
+
+
+// a reverse loop:
+// starts at the variable length - 1 (the last index),
+// goes while i is higher or equal to 0 
+// and decreases the variable i
+
+// Iteration 3.3 lexicographic
+
+// first we identify the longest word for the loop
+
+
+
 
 // Bonus 1: Iorem Ipsum
 
